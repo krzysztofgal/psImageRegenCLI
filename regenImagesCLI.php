@@ -23,7 +23,7 @@ _regenerateThumbnails('all',$deleteAll);
 
 function _regenerateThumbnails($type = 'all', $deleteOldImages = false)
 {
-    $errors = [];
+    $errors = array();
     $languages = Language::getLanguages(false);
 
     $process = array(
@@ -109,7 +109,7 @@ function _regenerateNewImages($dir, $type, $productsImages = false)
         return false;
     }
 
-    $errors = [];
+    $errors = array();
 
     $generate_hight_dpi_images = (bool)Configuration::get('PS_HIGHT_DPI');
 
