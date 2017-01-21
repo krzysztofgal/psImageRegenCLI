@@ -1,7 +1,9 @@
 # psImageRegenCLI
 Prestashop images regeneration for command line.
 
-This is based on functions from prestashop 1.6.1.4
+This is based on functions from prestashop 1.6.1.4, tested and works on 1.6.1.11
+
+Note: Watermark images are generated at end, after all images were resized.
 
 Usage:
 - Make a backup of your img folder (eg. like "tar -cvf imagesbackup.tar img"),
